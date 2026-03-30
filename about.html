@@ -160,6 +160,56 @@
             .education-section {
                 padding: 1.5rem;
             }
+
+            .contact {
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card {
+    text-align: center;
+    padding: 40px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+/* subtle hover lift */
+.contact-card:hover {
+    transform: translateY(-6px);
+}
+
+/* text */
+.contact-card h3 {
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+/* button */
+.contact-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* hover effect */
+.contact-btn:hover {
+    background: #38bdf8;
+    color: #000;
+}
         }
     </style>
 </head>
@@ -187,24 +237,18 @@
             </div>
 
             <div class="bio-content">
-                <h2>Welcome</h2>
-                <p>
-                    I am a passionate web developer and designer with expertise in creating responsive, 
-                    user-friendly websites and applications. With a strong foundation in both frontend and 
-                    backend technologies, I help businesses and individuals establish their digital presence 
-                    through modern, intuitive web solutions.
-                </p>
-                <p>
-                    My approach focuses on combining elegant design with clean, efficient code to deliver 
-                    projects that not only look great but perform exceptionally. I'm committed to staying 
-                    current with industry standards and best practices, ensuring that every project is built 
-                    on the latest technologies and methodologies.
-                </p>
-                <p>
-                    Over the years, I've had the opportunity to practices working on diverse projects ranging from 
-                     websites to dynamic web applications. Each projecthas strengthened my problem-solving skills and deepened my understanding of what it 
-                    takes to create truly exceptional digital experiences.
-                </p>
+
+                <section class="contact">
+    <div class="contact-card">
+        <h3>Get In Touch</h3>
+        <p>Have a project or question?</p>
+
+        <a href="mailto:milettys445@gmail.com" class="contact-btn">
+            Email Me
+        </a>
+    </div>
+</section>
+       
             </div>
         </div>
 
